@@ -22,7 +22,7 @@ const createStore = (initialState = {}) => {
   return { getState, updateState, subscribe };
 };
 
-// hook that subscribes and updates the child component.
+// hook that subscribes and updates the component.
 const useCustomeState = (store) => {
   const [state, setState] = useState(store.getState());
 
